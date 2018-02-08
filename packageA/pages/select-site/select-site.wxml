@@ -1,0 +1,26 @@
+<view class="select-site">
+  <view class='main'>
+    <!-- <view class='addressList'>
+      <view class='addressItem'>
+        <view class='addressDetail actived'>
+          <view>bb 13511112222</view>
+          <view>深圳市民中心c区-南门 11</view>
+        </view>
+        <view class='updateAddress'></view>
+      </view>
+      <view class='addressItem'>
+        <view class='addressDetail actived'>
+          <view>bb 13511112222</view>
+          <view>深圳市民中心c区-南门 11</view>
+        </view>
+        <view class='updateAddress'></view>
+      </view>
+    </view> -->
+    <view class='emptyAddress'>
+      <view>您还没有填写地址,请填写地址</view>
+    </view>
+    <view class='addFooter'>
+      <view class='addAddress'>+新增地址</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+<!--pages/mine/mine.wxml-->
+<view class='main'>
+  <view class='mineHeader'>
+    <!--未登录  -->
+    <view class='toLoginIn' wx:if="{{!user.id}}">
+      <text class='toLoginInPortrait'></text>
+      <navigator class='toLoginInbtn' url="/packageA/pages/login/login">未登录</navigator>
+    </view>
+    <!--已登录  -->
+    <view class='LoginIn' wx:if="{{user.id}}">
+      <view class='loginInPortrait'></view>
+      <view class='userInfo'>
+        <view class='phone'>{{user.phone}}</view>
+        <view class='level'>V0</view>
+        <text class='editUserInfoIcon'></text>
+      </view>
+    </view>
+    <view class='collect'>
+      <view class='productCollect'><text>商品收藏</text></view>
+      <view class='storeCollect'><text>店铺收藏</text></view>
+    </view>
+  </view>
+  <!--others start  -->
+  <view class='mineBody'>
+    <!--订单  start-->
+    <view class='orders'>
+      <view class='myOrder'>我的订单<text class='allOrders'>查看全部订单 ></text></view>
+      <view class='otherTypeOrders'>
+        <view class='toPay'>待付款</view>
+        <view class='toGet'>待收货</view>
+        <view class='toComment'>待评价</view>
+        <view class='toGetback'>退款/售后</view>
+      </view>
+    </view>
+    <!--订单 end -->
+    <!--积分商城 start  -->
+    <view class='other'>
+      <view class='pointsMall'>积分商城</view>
+      <view class='coupon'>优惠券</view>
+      <view class='address'>收货地址</view>
+      <view class='help'>客服/反馈</view>
+      <view class='about'>关于我们</view>
+    </view>
+    <!--积分商城 end  -->
+    <!--退出当前账号 start  -->
+    <view class='exit'>退出当前账号</view>
+    <!--退出当前账号 end  -->
+  </view>
+  <!--others end  -->
+</view>

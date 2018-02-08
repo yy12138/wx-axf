@@ -1,0 +1,84 @@
+<!--pages/cart/cart.wxml-->
+<view class='cart'>
+  <view class='notLogin' wx:if="{{!user.id}}">
+    <navigator class='toLogin' url="/packageA/pages/login/login">未登录,请登录</navigator>
+  </view>
+  <view class='main' wx:if="{{user.id}}">
+    <view class='fixView'>
+      <!-- table start -->
+      <view class='addr_table'>
+        <view class='tr'>
+          <text class='widthSameT'>收<text class="hidden">a</text>货<text class="hidden">a</text>人</text><text class='widthFive'>ha 女士</text>
+        </view>
+        <view class='tr'>
+          <text class='widthSameT'>电<text class="hidden">电话</text>话</text>
+          <text class='widthFive'>15879153258</text>
+          <navigator class='updateAddr' url='../../packageA/pages/select-site/select-site'>修改</navigator>
+        </view>
+        <view class='tr'>
+          <text class='widthSameT'>收货地址</text><text class='widthFive'>深圳市深圳市教育督导室 11</text>
+        </view>
+      </view>
+      <!--table end  -->
+      <!--cart_body start  -->
+      <view class='cart_body'>
+        <view class='add_item'>
+          <view class='toCart'>
+            <text class='cartName'>闪送超市</text>
+            <navigator class='btnToCart' url="/pages/category/category" open-type="switchTab">凑单专区</navigator>
+          </view>
+          <view>￥0起送,22:00前满￥30免运费,22:00后满￥50免运费</view>
+        </view>
+        <!--收货时间 start  -->
+        <view class='get_time'>
+          <text class='get'>收货时间</text>
+          <picker mode="multiSelector" value='{{timeIndex}}' range='{{timeRange}}' bindcolumnchange="bindMultiPickerColumnChange" >
+            <view class="picker">
+              {{timeRange[0][timeIndex[0]]}} {{timeRange[1][timeIndex[1]]}}
+            </view>
+            <text class='bookAble'>可预订</text>
+          </picker>
+        </view>
+        <!--收货时间 end  -->
+        <!--收货备注 start  -->
+        <view class='remark get_time'>
+          <text>收货备注</text>
+          <view class='remark_detail'>
+            <input placeholder='可输入100字以内特殊要求内容'></input>
+          </view> 
+        </view>
+        <!--收获备注 end  -->
+      </view>
+      <!--cart_body end  -->
+    </view>
+    <!--carts start  -->
+    <view class='cartsList'>
+      <scroll-view class='cartsListInner' scroll-y="{{true}}">
+        <view class='carts_item' wx:for="{{carts}}" wx:key="{{item.id}}" data-productid="{{item.productId}}" bindtap='toDetail'>
+          <text class='checkBox {{item.selected ? "selected" : ""}}'></text>
+          <view class='cartImg'>
+            <image src='{{item.img}}'></image>
+          </view>
+          <view class='cartDetail'>
+            <view class='cartDetailName'>{{item.name}}</view>
+            <text class='cartPrice'>￥{{item.price}}</text>
+            <view class='btnArr'>
+              <text class='subCartNum' data-productobj='{{item}}' catchtap='subToCart'>-</text>
+              <text class='cartNum'>{{item.num}}</text>
+              <text class='addCartNum' data-productobj="{{item}}" catchtap='addToCart'>+</text>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+    <!--carts end  -->
+    <!--count start  -->
+    <view class='count'>
+      <text class='checkBox allChecked {{allSelected ? "selected" : ""}}' bindtap='changeAllSelected'></text>
+      <text>全选</text>
+      <text class='totalUp'>共:<text class='total'>￥{{total}}</text></text>
+      <view class='checkOut'>选好了</view>
+    </view>
+    <!--count end  -->
+  </view>
+</view>

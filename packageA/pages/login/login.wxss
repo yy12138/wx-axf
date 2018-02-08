@@ -1,0 +1,35 @@
+.main{
+  top: 0;
+}
+.pic{
+  background: #ffd600 url("https://s1.ax1x.com/2018/02/05/9KmltI.png") no-repeat;
+  background-position: 20rpx bottom;
+  background-size: auto 85%;
+  height: 138rpx;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+}
+.p{
+  width: 62%;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 0;
+}
+.tel{
+  background-color: #fff;
+  padding: 10rpx 0 10rpx 30rpx;
+  font-size: 28rpx;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 100rpx;
+}
+.sure{
+  width: 95%;
+  margin: 0 auto;
+  background-color: #ffd600;
+  border-radius: 10rpx;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+}

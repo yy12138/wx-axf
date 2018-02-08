@@ -1,0 +1,61 @@
+<!--pages/category/category.wxml-->
+
+<view class='category'>
+  <header-yellow></header-yellow>
+  <view class='main'>
+    <view class='main-container'>
+      <!--分类显示列表 开始  -->
+      <view class='categories_wrap'>
+        <view>
+          <view class='category-item' wx:for="{{computedCategories}}" wx:key="{{item.id}}" data-categoryindex='{{index}}' bindtap='changeActiveCategoryId'>
+            <text class='var {{activeCategoryId === index ? "active" : ""}}'></text><text>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+      <!--分类显示列表 结束  -->
+      <!--商品显示列表 开始  -->
+      <view class='products-wrap-right'>
+        <view class='products_container'>
+          <!--子分类 开始  -->
+          <view class='select_cids_wrap'>
+            <view bindtap='changeSelectControl'>全部分类</view>
+            <view bindtap='changeSortControl'>综合排序</view>
+          </view>
+          <!--子分类 结束  -->
+          <!--子分类的隐藏或显示的部分 开始  -->
+          <view class='select_cids' style='height: {{!selectControl || !sortControl ? "100%" : ""}}'>
+            <view class='cids_wrap' hidden='{{selectControl}}'>
+              <view class='{{activedSelectCid === "all" ? "active" : ""}}' data-cid='all' bindtap='changeActivedSelectCid'>全部分类</view>
+              <view wx:for='{{computedCategories[activeCategoryId].cids}}'  wx:key="index" class='{{activedSelectCid === index ? "active" : ""}}' data-cid='{{index}}' bindtap='changeActivedSelectCid'>{{item.name}}</view>
+            </view>
+            <view class='cids_wrap' hidden='{{sortControl}}'>
+              <view class='{{activedSortCid === "middle" ? "active" : ""}}' data-cid='middle' bindtap='changeActivedSortCid'>综合排序</view>
+              <view  class='{{activedSortCid === "up" ? "active" : ""}}' data-cid='up' bindtap='changeActivedSortCid'>价格最高</view>
+              <view class='{{activedSortCid === "down" ? "active" : ""}}' data-cid='down' bindtap='changeActivedSortCid'>价格最低</view>
+            </view>
+          </view>
+          <!--子分类的隐藏或显示的部分 结束  -->
+          <view class='product_items_wrap'>
+            <view class='products_items' wx:for="{{activedProducts}}" wx:key="item.id" data-productid="{{item.id}}" bindtap='toDetail'>
+              <view class='dl'>
+                <view class='dt'>
+                  <image src='{{item.imgs.min}}'></image>
+                </view>
+                <view class='title dd'>{{item.name}}</view>
+                <view class='retail dd'>
+                  <view class='unit'>{{item.unit}}ml</view>
+                  <view class='price red'>¥{{item.price}}</view>
+                </view>
+                <view class='subNum'>
+                  <text class='subCarts red' data-productobj="{{item}}" catchtap='subToCart'>-</text><text class='num'>{{item.num}}</text>
+                </view>
+                <view class='addCarts red dd' data-productobj="{{item}}" catchtap='addToCart'>+</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!--商品显示列表 结束  -->
+    </view>
+  </view>
+</view>

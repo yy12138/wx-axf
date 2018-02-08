@@ -1,0 +1,45 @@
+<view class="product-item">
+  <view class='main'>
+    <header-gray myTitle="{{product.name}}{{product.unit}}ml"/>
+    <view class='basicProductDetail'>
+      <view class='product-img'>
+        <image src='{{product.imgs.max}}'></image>
+      </view>
+      <view class='product-name'>{{product.name}}{{product.unit}}ml</view>
+      <view class="product-price">￥{{product.price}}</view>
+    </view>
+    <!--商品详情 start  -->
+    <view class='productDetail'>
+      <view class='product-title'>商品详情</view>
+      <view class='brand'>
+        <text class='ws'>品<text class='hidden'>品牌</text>牌</text><text>{{product.brand}}</text>
+      </view>
+      <view class='unit'>
+        <text class='ws'>产品规格</text><text>{{product.unit}}ml</text>
+      </view>
+      <view class='expiration_date'>
+        <text class='ws'>保质期限</text><text>{{product.expiration_date}}年</text>
+      </view>
+    </view>
+    <!--商品详情 end  -->
+    <!--图文详情 start  -->
+    <view class='pictureDetail'>
+      <view class='product-title'>图文详情</view>
+      <view class='promise'></view>
+    </view>
+    <!--图文详情 end  -->
+    <view class='foot'>
+      <view class='favorite'>收藏</view>
+      <view class='addToCart'>添加商品:
+        <view class='cartOperateBtn'>
+          <text class='subCartNum'>-</text>
+          <text class='num'>{{cartNum}}</text>
+          <text class='addCartNum'>+</text>
+        </view>
+      </view>
+      <view class='cartIcon'>
+        <view class='cartLength'>{{cartsLength}}</view>
+      </view>
+    </view>
+  </view>
+</view>

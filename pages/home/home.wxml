@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<view class='home'>
+  <header-yellow></header-yellow>
+  <view class='main'>
+    <view class='bannar'>
+      <swiper autoplay indicator-dots circular interval="4000">
+        <swiper-item wx:for="{{bannar}}" wx:key="{{item.id}}">
+          <image src='{{item.bannar_imgs}}'></image>
+        </swiper-item>
+      </swiper>
+    </view>
+     <view>
+      <view class='categoryProducts-wrap' wx:for="{{computedCategories}}" wx:key="{{item.id}}">
+        <view class='category-title-wrap'>
+          <view class='category-title' style="color: {{item.color}};border-color: {{item.color}}" >{{item.name}}</view>
+          <text>更多 ></text>
+        </view>
+        <view class='category-img'>
+          <image src='{{item.category_img}}'></image>
+        </view>
+        <view class='products-cids'>
+          <view class='product-cids-item' wx:for="{{item.products}}" wx:for-item="product" wx:key="{{product.id}}" wx:for-index="idx" wx:if="{{idx < 3}}">
+            <view class='category-padding' data-productid='{{product.id}}' bindtap='toDetail'>
+              <image src='{{product.imgs.min}}'></image>
+              <view class='product-title'>{{product.name}}</view>
+              <view class='product-retails-wrap'>
+                <view class='product-retails'>
+                  <view>{{product.unit}}ml</view>
+                  <view class='red'>¥{{product.price}}</view>
+                </view>
+                <view class='red btn' data-productobj="{{product}}" catchtap='addToCart'>+</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

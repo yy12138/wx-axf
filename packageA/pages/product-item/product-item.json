@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "详情页",
+  "usingComponents": {
+    "header-gray": "../../../components/header-gray/header-gray"
+  }
+}

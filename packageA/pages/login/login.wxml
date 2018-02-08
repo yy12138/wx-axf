@@ -1,0 +1,11 @@
+<view class='login'>
+ <view class='main'>
+  <view class='pic' hidden='{{hiddenBol}}'>
+    <view class='p'>为了方便您及时查询订单信息，鲜蜂侠需要验证您的手机号为查询帐号</view>
+  </view>
+  <view class='tel'>
+    <input id="phone" type='number' placeholder='手机号码' bindfocus='hindHidden' bindblur='hindDisplay' bindinput="getTel"></input>
+  </view>
+  <view class='sure' bindtap='vertifyUser'>确定</view>
+ </view>
+</view>

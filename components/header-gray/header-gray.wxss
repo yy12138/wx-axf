@@ -1,0 +1,10 @@
+/* components/header-gray.wxss */
+.header-gray{
+  text-align: center;
+  line-height: 90rpx;
+  width: 100%;
+  height: 90rpx;
+  background-color: #f9fafd;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 28rpx;
+}

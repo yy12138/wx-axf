@@ -1,0 +1,5 @@
+<!--components/header-gray.wxml-->
+<view class='header-gray'>
+  {{myTitle}}
+  <slot></slot>
+</view>

@@ -1,0 +1,127 @@
+.main{
+  top: 0;
+}
+.basicProductDetail{
+  background-color: #fff;
+  font-size: 46rpx;
+  text-align: center;
+  padding-bottom: 40rpx;
+  margin-bottom: 10rpx;
+}
+.product-img{
+  padding: 80rpx 20rpx;
+}
+.product-price{
+  line-height: 90rpx;
+  color: #f40;
+  font-size: 44rpx;
+}
+.productDetail{
+  background-color: #fff;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  margin-bottom: 10rpx;
+}
+.ws{
+  display: inline-block;
+  width: 25%;
+  color: #848c99;
+  text-align: center;
+}
+.product-title{
+  text-align: center;
+  color: #e0bd6a;
+  font-size: 28rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV8AAAAEBAMAAADbpSEyAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAqUExURQAAAOC9auC9auC9auC9auC9auC9auC9auC9auC9auC9auC9auC9auC9agdMhdkAAAANdFJOUwCZRGaID/C0S1EkGCCdfVLsAAAAM0lEQVQoz2NgIAWw3r3GQFXQe7eAgZZgMDjYhVhwgHYO5hQkGggwGBMLNtDOwVxKRAMFAOUAK2mKnCc7AAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 4rpx;
+}
+.pictureDetail{
+  background-color: #fff;
+  margin-bottom: 140rpx;
+}
+.promise{
+  width: 100%;
+  height: 500rpx;
+  background-image: url("https://s1.ax1x.com/2018/02/05/9Kfz0x.jpg");
+  background-size: 100% 100%;
+}
+.foot{
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  left: 0;
+  right: 0;
+  font-size: 28rpx;
+  padding: 14rpx 0 14rpx 14rpx;
+  box-sizing: border-box;
+}
+.favorite{
+  text-align: center;
+  font-size: 20rpx;
+  padding-top: 36rpx;
+  width: 80rpx;
+  display: inline-block;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAgCAMAAABNTyq8AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAG5UExURQAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzM4/8pFgAAACSdFJOUwADASAK83TwOeVQDwSR/NzBJRzbx+gMyOber3Bd8QUCmnXvJ00oy9nU7vm9j/7fESP7LJK70y0bB7pl0ST96tI8QOMQEjR+SA5Sfcr25Ga8g46XblpsgsytaVebBq6kRlx/CJlrJmdVKrXGMBUYH+n01mHaK2KMyUqsoGi2T1QZsm8UHS54MzI68oF6qPjg0NiFhuDbnwAAAbRJREFUOMuNlGdXE1EQQF+AZJOQ3kjovXfpHaSjgNKUqhSVjgXsggLSVPT+YlMgyabsYT7sztxz3+7M23dWiDuHSqt59Hg8PTFE1l6UrxhbXoVA5oSbQIxMZvmJvvAGzOTfOI0OeJitGR1OVcOG92lb65Cx8Hw1Z64Snrh8TpUd9dNMv+5Ky0VntRUhTSX5QVZ6LpZ5b/KRks3gm3eKed2KuToIGiTuCdEFX8NG2N6FvbwwMEtNgfiERTboG9DIQD3lwsNnGVvWFTfJQD+togatfM+SDfI6H0mY6FPe6C7ahY5vytIQTtHsG1EpLikTp/QYFKUUrsQJ6JUcawUNQjh4n6AgZePwXgfgZXwnr5QPvvsXdMnxnIQy6vxJYgaL8aQcHhQEsmewH9vpNpF2mxsp1cZybE5Sg0OpjuiojXbud1IU1m1SCj1tkY4XdrRFLLIfRzh1SGdy1GinsjocDFq4iGrUZsb9LlT+KEQ6j27zsJ6Spdui1ozzZ6yBq5oxfQ+kejVvrbG3zmCEX71CNB1UMNYb93O2/MY9NHBN+7RK4WD0eXx/gD/dyod18J/nb78rAv4HP9FpNT7C9VcAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: 56% top;
+  background-size: 36rpx auto;
+}
+.addToCart{
+  display: inline-block;
+  position: absolute;
+  left: 120rpx;
+  top: 0;
+  bottom: 0;
+  line-height: 100rpx;
+}
+.cartOperateBtn{
+  display: inline-block;
+}
+.subCartNum,.addCartNum,.num{
+  display: inline-block;
+  width: 52rpx;
+  height: 52rpx;
+  text-align: center;
+  line-height: 52rpx;
+}
+.subCartNum,.addCartNum{
+  border: 1px solid #ff4300;
+  color: #ff4300;
+  font-weight: 700;
+  font-size: 34rpx;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.cartIcon{
+  position: absolute;
+  top: -40rpx;
+  right: 20rpx;
+  z-index: 4;
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 50%;
+  background-color: #ffd600;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABuCAMAAADxhdbJAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAHFUExURUxpcf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////74HNBAAAACWdFJOUwCwEOygcNBggJAEwJwFJFDw8qR+MBv+4ItLAuT9A8zfQNxUKAaOPSxmRA72+/UBjOpVM1P5a+jDZKgmtTe+F0rYZaLxDwmIXAdXbCB0cdHpjWhuuazPeK0MxdccW28+98djVnmWl0Lte11BPy+yE/xyttmYHvTORQsSxIYiMRmn83bUgrgNdSmULoHbNJIVZ5tZ3vq/61CyaTYAAAKJSURBVGje7dlnVxNBFAbgJQklMT3BJCIkKEWqghRpIh3B3pVi7733DvZe9vc6m03xgwve927m6Dnzfp6T52x25u7MHU1TUVFRUVFRUeGkzanreii5ED/jk8EZmhlnZKzwXIuez3t/wbm5jt+8LZ7CP98qx/3euqFwyPDmpc0ZR5XgZuXN0S+CeyWPiwtubymSwVGA26bDafpM59bojGwkc+0croTMLXK4lfR/s4LBjdC5HwxugM6dZnBxOredwbXRuQSDe0Ln/LhWDZQVTzPMeZGqeQPmJhDuMszNINwuVEtCn6B1KOeCuAsoVwpx5Sg3jX3Qn2FaDNw/7Jf56jStB+M2gdxLjEM33+chrQLd+32AuDDKNUp9deB2ZS3MDQBaF75xfwNwPTi3B+B241yD1Fen3aJrGzinrttkbh+Hu0PmpjhcmMzVc7gIVfvZyuHIZ8qDrAP6WypXzOImVxO5KK//8I2mdbfyuD5jx//XLY5ADbO7Uiu4cXnNHGMnXSSPuyi4I/K4zYJr9sjzgsLrPySNO5bpywSDsViyRGSFSJGIKx2v28x4WTrn7jI5F3GdJ3jcEJFbz+wVn+yuDhJK2VZ7GtRXpv3R9lQqlQgEApkaMlWczvOyTB663bVf1VXMP5ax172Vy1SfS5/swkZPtej62cgSd1ANxqXDg357LjBemFP8uuUDTpgL5fugHZw3u6SuWTVEmrKXYg6+du9o7gbKYsSB3Bo/zuce5yvG5J9HPM0N+Mjn6vPdeovv3rBdBdOIbyT7Y1UWIzpz3Akbpsq75apv485sT7jGBs7XZ/6Y23JEXcg82kVtWXiVnTuudhxe6hbp0bBT77pZrsqvioqKioqKyn+dX7jWs9PYCXZZAAAAAElFTkSuQmCC");
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cartLength{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f40;
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 36rpx;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 5;
+  font-size: 20rpx;
+}
